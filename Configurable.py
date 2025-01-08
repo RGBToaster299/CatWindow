@@ -63,13 +63,13 @@ def is_color_in_list(color_name):
     return color_name in colors
 
 
-print("Hi this is where you will configure the Cat Window :3")
+print(":------{ CatWindow Setup }------:")
 def init():
-    color = input("Background Color(be careful with grammar):")
+    color = input("Background Color [Possible options listet in configurable.py]: ")
     if is_color_in_list(color) != True:
-        print("Invalid color please restart the program otherwise everything might break")
+        print("Invalid Color [see configurable.py for possible options] Please restart programm to prevent bugs.")
     
-    facecol = input("Cat Face Color:")
+    facecol = input("Cat-Face Color: ")
     return color,facecol
 BGCol,FaceCol = init()
 root = tk.Tk()
