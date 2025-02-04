@@ -65,7 +65,7 @@ def is_color_in_list(color_name):
 
 print(":------{ CatWindow Setup }------:")
 def init():
-    color = input("Background Color [Possible options listet in configurable.py]: ")
+    color = input("Background Color [Possible options listed in configurable.py]: ")
     if is_color_in_list(color) != True:
         print("Invalid Color [see configurable.py for possible options] Please restart programm to prevent bugs.")
     
